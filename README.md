@@ -6,20 +6,30 @@ Repositório dedicado às atividades da disciplina **Programação para a Web 2*
 
 ## 📝 Sobre o Projeto
 
-Este projeto reúne exercícios e exemplos práticos desenvolvidos durante o semestre, abordando conceitos fundamentais de programação web, lógica, manipulação de dados e testes em JavaScript.
+Este projeto reúne exercícios e exemplos práticos desenvolvidos durante o semestre, abordando conceitos fundamentais de programação web, lógica, manipulação de dados e testes automatizados em JavaScript.
 
 ---
 
 ## 📂 Estrutura dos Arquivos
 
 - **Exam_object.js**  
-  Exemplo de sistema de correção de provas, com cálculo de notas, médias, maiores e menores valores.
+  Exporta a classe `Exam`, utilizada para correção de provas e cálculos estatísticos.  
+  Usado como módulo em testes automatizados.
 
 - **Exam_object_input.js**  
-  Versão interativa do sistema de correção de provas, recebendo dados via terminal.
+  Sistema interativo de correção de provas via terminal, recebendo gabarito, pesos e respostas dos alunos.
 
 - **Array_operations.js**  
-  Operações matemáticas com vetores: soma, soma dos ímpares e produto dos elementos.
+  Exporta funções utilitárias para operações com arrays:  
+  - `sum(arr)`: soma dos elementos  
+  - `product(arr)`: produto dos elementos  
+  - `sumOdds(arr)`: soma dos elementos ímpares
+
+- **Array_operation_test.js**  
+  Testes automatizados para as funções de operações com arrays.
+
+- **exam_test.js**  
+  Testes automatizados para a classe `Exam`.
 
 ---
 
@@ -33,23 +43,26 @@ Este projeto reúne exercícios e exemplos práticos desenvolvidos durante o sem
 
 2. **Execute os arquivos JavaScript:**
    ```bash
-   node Array_operations.js
-   node Exam_object.js
    node Exam_object_input.js
    ```
 
-   > Para o arquivo `Exam_object_input.js`, é necessário o Node.js instalado.  
-   > Caso utilize entrada via terminal, não é preciso instalar pacotes extras.
+3. **Execute os testes automatizados:**
+   ```bash
+   node --test Array_operation_test.js
+   node --test exam_test.js
+   ```
+
+   > Para rodar os testes, é necessário o Node.js versão 18 ou superior.
 
 ---
 
 ## 💡 Exemplos de Uso
 
 - **Correção de provas:**  
-  Insira o gabarito, pesos e respostas dos alunos para obter estatísticas da turma.
+  Importe a classe `Exam` em seu código ou utilize o sistema interativo para calcular notas, médias, maiores e menores valores.
 
 - **Operações com vetores:**  
-  Veja resultados de soma, soma dos ímpares e produto para diferentes conjuntos de números.
+  Importe as funções `sum`, `product` e `sumOdds` para realizar operações matemáticas em arrays.
 
 ---
 
