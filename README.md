@@ -31,6 +31,15 @@ Este projeto reúne exercícios e exemplos práticos desenvolvidos durante o sem
 - **exam_test.js**  
   Testes automatizados para a classe `Exam`.
 
+  **ContryFlags**
+- **CountryFlags/index.html**  
+  Página web que exibe bandeiras de países utilizando a API REST Countries.
+- **CountryFlags/script.js**  
+  Script JavaScript que busca e exibe as bandeiras na página HTML.
+- **CountryFlags/style.css**  
+  Estilos CSS para a página de bandeiras.
+  
+
 ---
 
 ## 🚀 Como Executar
