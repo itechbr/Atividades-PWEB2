@@ -77,7 +77,7 @@ Este projeto reúne exercícios e exemplos práticos desenvolvidos durante o sem
 
 ## 👨‍💻 Autor
 
-- **Nome:** Seu Nome
+- **Nome:** Ícaro Pontes
 - **Instituição:** IFPB
 - **Disciplina:** Programação para a Web 2
 
